@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import styled from "styled-components"
 
@@ -24,7 +23,6 @@ function App() {
       </HeaderImageBoundingBox>
       
       <header className="App-header">
-       
         Spring 2022 W210 Capstone
         <br/>
         Crown of Thorns Starfish
@@ -32,7 +30,6 @@ function App() {
           by Alan Zhang, Frank Tang, Jocelyn Lu, Joseph Wood, and Spencer Hong
         </GroupMembers>
       </header>
-
     </div>
   );
 }
