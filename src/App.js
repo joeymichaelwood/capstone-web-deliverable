@@ -29,7 +29,7 @@ function App() {
         <br/>
         Crown of Thorns Starfish
         <GroupMembers>
-          by Alan Zhang, Frank Tank, Jocelyn Lu, Joseph Wood, and Spencer Hong
+          by Alan Zhang, Frank Tang, Jocelyn Lu, Joseph Wood, and Spencer Hong
         </GroupMembers>
       </header>
 
