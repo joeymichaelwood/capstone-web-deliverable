@@ -25,7 +25,7 @@ function App() {
       
       <header className="App-header">
        
-        W207 Capstone
+        Spring 2022 W210 Capstone
         <br/>
         Crown of Thorns Starfish
         <GroupMembers>
