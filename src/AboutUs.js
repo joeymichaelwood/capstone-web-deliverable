@@ -36,7 +36,7 @@ function AboutUs() {
   return (
       <AboutUsWrapper>
         <TheTeam>The Team</TheTeam>
-        <Description>The team consists of 5 University of California, Berkeley's Master in Data Science program</Description>
+        <Description>The team consists of 5 students in the University of California, Berkeley's Master in Data Science program</Description>
         <GroupMembers>
             {details.map(detail => {
                 return (
