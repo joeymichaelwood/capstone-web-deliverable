@@ -1,36 +1,51 @@
 import './App.css';
 import styled from "styled-components"
+import Introduction from './Introduction';
+import HomeScreen from './HomeScreen';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import AboutUs from './AboutUs';
+import Data from './Data';
+import TechnicalApproach from './TechnicalApproach';
 
-const HeaderImageBoundingBox = styled.div`
-  height: 70vh;
-  width: 100vw;
-`
-
-const HeaderImage = styled.img`
-  height: 100%;
+const Navigation = styled.div`
   width: 100%;
-`
-
-const GroupMembers = styled.p`
-  font-size: calc(10px + 3vmin);
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #282c34;
+  color: white;
+  height: 3em;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
 `
 
 function App() {
   return (
-    <div className="App">
-      <HeaderImageBoundingBox>
-        <HeaderImage src={"../starfish-boxes.png"}></HeaderImage>
-      </HeaderImageBoundingBox>
-      
-      <header className="App-header">
-        Spring 2022 W210 Capstone
-        <br/>
-        Crown of Thorns Starfish
-        <GroupMembers>
-          by Alan Zhang, Frank Tang, Jocelyn Lu, Joseph Wood, and Spencer Hong
-        </GroupMembers>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav>
+            <Navigation>
+              <Link to="/">Home</Link>
+              <Link to="/introduction">Introduction</Link>
+              <Link to="/data">Data</Link> 
+              <Link to="/technical">Technical Approach</Link> 
+              <Link to="/team">Team</Link>
+            </Navigation> 
+        </nav>
+        <Routes>
+          <Route path="/introduction" element={<Introduction />}/>
+          <Route path="/data" element={<Data />}/>
+          <Route path="/technical" element={<TechnicalApproach />}/>
+          <Route path="/team" element={<AboutUs />} />
+          <Route path="/" element={<HomeScreen />}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
