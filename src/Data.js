@@ -29,6 +29,10 @@ function Data() {
         <br />
         <br />
         Because the data comes from frames in a video, the images are not very clear, and given the vast number of objects in each frame, it is extremely challenging to consistenly identify them in the murkiness of the ocean that limits color contrast between the starfish and their surroundings. The starfish can also frequently overlap on top of each other, and our model was identifying them as a single starfish and struggling to identify them as separate organisms as the results expected. The starfish also look just like other objects in the reefs without the high color contrast and frequently blended in with their surroundings.
+        <br />
+        <br />
+        Here you can see how a potential real time application may work, where all the images are compiled together, with the identified COTS zoomed in and focused on. So even if we identified it incorrectly, the researchers could get a clearer view and decide whether it should be acted on. 
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/ajVsTHGfSbk"></iframe>
     </DataWrapper>
   );
 }
