@@ -33,6 +33,17 @@ function TechnicalApproach() {
         <br />
         <br />
         <HeaderImage src={`${process.env.PUBLIC_URL}results.png`}></HeaderImage>
+
+        <DataTitle>Additional Work</DataTitle>
+        <br />
+        <br />
+        With more time, there is the opportunity to work on several improvements to our existing solution. Given that the YOLOv5 model tends to guess too many starfish, a subsequent model could be trained to determine whether the annotations it picked are actually crown of thorns starifsh. This model could better distinguish whether the box is a COTS or part of the reef. Given the much smaller area this model would have to focus on, we hypothesize significant improvements over it's ability to make these distinctions. 
+        <br />
+        <br />
+        Through this opportunity for improvement and other key fine-tuning that we have in mind, our next milestone is to hit 60% accuracy, a top 500 Kaggle score with the leader at 76% accuracy, compared to our current 40% score. There is also an opportuntiy to speed up performance of inference, which currently takes about 1.5 seconds per frame, as we'd like this to be as close to real time as possible, given the application it's used for.
+        <br />
+        <br />
+        Given the flexibility of the work we've done, we can quickly extrapolate this model to be used for other marine identification tasks. Given that YOLOv5 works better on larger object detection use cases, it may even perform better in other applications than it does on the one it was originally designed for.
     </DataWrapper>
   );
 }

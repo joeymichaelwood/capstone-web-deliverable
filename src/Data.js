@@ -32,6 +32,8 @@ function Data() {
         <br />
         <br />
         Here you can see how a potential real time application may work, where all the images are compiled together, with the identified COTS zoomed in and focused on. So even if we identified it incorrectly, the researchers could get a clearer view and decide whether it should be acted on. 
+        <br />
+        <br />
         <iframe width="700" height="400" src="https://www.youtube.com/embed/ajVsTHGfSbk"></iframe>
     </DataWrapper>
   );
